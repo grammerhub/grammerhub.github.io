@@ -34,8 +34,7 @@ body {
 }
 
 ol, ul {
-	list-style-position: inside;
-	text-align: center;
+	list-style: none;
 }
 
 blockquote, q {
