@@ -1,6 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nuxt 3 Project
+
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+
+### Modules used
+
+This project uses [TailwindCSS](https://tailwindcss.com/) and [NuxtContent](https://content.nuxt.com/usage/content-directory) modules.
 
 ## Planned Features
+
 [] Homepage
 
 [] Talent Page - Hire
@@ -16,6 +23,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 [] Blog Article Page
 
 ## Necessary Components
+
 [] Nav - Navbar
 
 [] Nav - Button
@@ -48,16 +56,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 [] Blog Article hero
 
-
 ## Contributing
 
 Visit the [issues page](https://github.com/grammerhub/grammerhub.github.io/issues) to see what needs to be done. Add a comment to the issue to claim it if you want to contribute.
 
 Please fork the repository and submit a pull request. If you do not submit a PR within 2 weeks of your claim, the issue will be reopened for others to claim.
 
-## Getting Started
+## Development Server
 
-Run the development server:
+Start the development server on `http://localhost:3000`:
 
 ```bash
 npm run dev
@@ -65,10 +72,6 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
 ## Have a question?
 
-If you need help please refer to the [Next.js Documentation](https://nextjs.org/docs) or post a question in the [GrammerHub Discord Server](https://discord.com/channels/906246990457864273/1078738106288701441)
+Connect with us in the [GrammerHub Discord Server](https://discord.com/channels/906246990457864273/1078738106288701441)
