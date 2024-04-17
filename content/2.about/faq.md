@@ -1,0 +1,6 @@
+---
+navigation:
+  title: 'FAQ'
+---
+
+# FAQ
