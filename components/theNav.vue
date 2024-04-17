@@ -39,24 +39,12 @@ function menuOpen() {
             <li v-for="link of navigation" :key="link._path" class="group relative mt-8 mb-8 lg:mt-0 lg:mb-0">
               <NuxtLink :to="link.children ? null : link._path"
                 class="cursor-pointer text-gray-600 hover:text-indigo-600">{{ link.title }}</NuxtLink>
-              <ul class="hidden absolute w-full group-hover:block">
+              <ul class="lg:hidden lg:absolute w-full group-hover:block">
                 <li v-for="child of link.children" :key="child._path" class="mt-8 mb-8 lg:mt-0 lg:mb-0">
                   <NuxtLink :to="child._path" class="text-gray-600 hover:text-indigo-600">{{ child.title }}</NuxtLink>
                 </li>
               </ul>
             </li>
-            <!-- <li class="mt-4 lg:mt-0">
-              <a href="javascript:void(0)"
-                class="py-3 px-4 text-center border text-gray-600 hover:text-indigo-600 rounded-md block lg:inline lg:border-0">
-                Login
-              </a>
-            </li>
-            <li class="mt-8 lg:mt-0">
-              <a href="javascript:void(0)"
-                class="py-3 px-4 text-center text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow block lg:inline">
-                Sign Up
-              </a>
-            </li> -->
           </ul>
         </ContentNavigation>
       </div>
