@@ -35,16 +35,18 @@ function menuOpen() {
       <div class="flex-1 justify-between flex-row-reverse lg:overflow-visible lg:flex lg:pb-0 lg:pr-0 lg:h-auto"
         :class="[open ? 'h-screen pb-20 overflow-auto pr-4' : 'hidden']">
         <ContentNavigation v-slot="{ navigation }">
-          <ul class="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
+          <ul class="flex flex-col items-start space-x-0 lg:space-x-6 lg:flex-row lg:items-center">
             <li v-for="link of navigation" :key="link._path" class="group relative mt-8 mb-8 lg:mt-0 lg:mb-0">
-              <NuxtLink :to="link.children ? null : link._path"
-                class="cursor-pointer text-gray-600 hover:text-indigo-600">{{ link.title }}</NuxtLink>
+              <NuxtLink :to="link.children ? null : link._path" class="cursor-pointer hover:text-indigo-600">
+                {{ link.title }}</NuxtLink>
               <ul class="lg:hidden lg:absolute w-full group-hover:block">
                 <li v-for="child of link.children" :key="child._path" class="mt-8 mb-8 lg:mt-0 lg:mb-0">
-                  <NuxtLink :to="child._path" class="text-gray-600 hover:text-indigo-600">{{ child.title }}</NuxtLink>
+                  <NuxtLink :to="child._path" class="hover:text-indigo-600">{{ child.title }}</NuxtLink>
                 </li>
               </ul>
             </li>
+            <TheButton href="http://discord.grammerhub.org/" class="ml-8">
+              Join the community</TheButton>
           </ul>
         </ContentNavigation>
       </div>
